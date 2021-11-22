@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Bliss_Navigation
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <virtualType name="Bliss\Navigation\Model\ResourceModel\Fulltext\CollectionFactory" type="Magento\Catalog\Model\ResourceModel\Product\CollectionFactory">
+        <arguments>
+            <argument name="instanceName" xsi:type="string">Bliss\Navigation\Model\ResourceModel\Fulltext\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\CatalogSearch\Model\Layer\Category\ItemCollectionProvider">
+        <arguments>
+            <argument name="collectionFactory" xsi:type="object">Bliss\Navigation\Model\ResourceModel\Fulltext\CollectionFactory</argument>
+        </arguments>
+    </type>
+    <virtualType name="FilterList" type="Bliss\Navigation\Model\Layer\FilterList">
+        <arguments>
+            <argument name="filterableAttributes" xsi:type="object">Magento\Catalog\Model\Layer\Category\FilterableAttributeList</argument>
+        </arguments>
+    </virtualType> -->
+    <type name="Magento\Catalog\Model\Layer\FilterList">
+        <plugin name="hideFilters_plugin" type="Bliss\Navigation\Plugins\FilterPlugin" />
+    </type>
+</config>
