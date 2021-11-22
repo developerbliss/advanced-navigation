@@ -1,6 +1,6 @@
 {
     "name": "bliss/advanced-navigation",
-    "description": "Advanced Navigation Module for Magento 2",
+    "description": "Advanced Navigation Extension for Magento 2",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
